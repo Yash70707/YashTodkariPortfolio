@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yash Todkari | Product Manager &amp; Product Owner</title>
+<meta name="description" content="Product manager for travel and commerce platforms. Two years inside airline reservations and eCommerce release testing, plus original research on how product teams adopt AI.">
+<meta name="author" content="Yash Todkari">
+<meta property="og:title" content="Yash Todkari | Product Manager &amp; Product Owner">
+<meta property="og:description" content="Product manager for travel and commerce platforms. Two years inside airline reservations and eCommerce release testing, plus original research on how product teams adopt AI.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta name="theme-color" content="#0E6B57">
+
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bg:#F2F1EC;
+  --surface:#FBFAF7;
+  --surface-elevated:#FFFFFF;
+  --ink:#141A17;
+  --ink-muted:#4D564F;
+  --ink-faint:#8B9289;
+  --accent:#0E6B57;
+  --accent-soft:#DCEAE4;
+  --accent-ink:#06251E;
+  --line:rgba(20,26,23,0.12);
+  --line-strong:rgba(20,26,23,0.22);
+  --shadow-1: 0 1px 2px rgba(20,26,23,0.06), 0 2px 8px rgba(20,26,23,0.05);
+  --shadow-2: 0 6px 24px rgba(20,26,23,0.10), 0 2px 6px rgba(20,26,23,0.06);
+  --radius-s: 6px;
+  --radius-m: 14px;
+  --radius-l: 26px;
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px; --sp-9: 96px; --sp-10: 140px;
+  --font-display: 'Zodiak', Georgia, serif;
+  --font-body: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+[data-theme="dark"]{
+  --bg:#12100E;
+  --surface:#181613;
+  --surface-elevated:#1F1C18;
+  --ink:#F3F1EA;
+  --ink-muted:#B4AFA5;
+  --ink-faint:#7C776C;
+  --accent:#4FCBAA;
+  --accent-soft:#1D3B32;
+  --accent-ink:#DFF6EC;
+  --line:rgba(243,241,234,0.12);
+  --line-strong:rgba(243,241,234,0.24);
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.25);
+  --shadow-2: 0 10px 30px rgba(0,0,0,0.45);
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--font-body); font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  transition:background .4s ease, color .4s ease;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{ font-family:var(--font-display); font-weight:500; line-height:1.05; margin:0; color:var(--ink); letter-spacing:-0.01em;}
+p{ margin:0; color:var(--ink-muted); line-height:1.6; }
+a{ color:inherit; text-decoration:none; }
+button{ font-family:inherit; cursor:pointer; }
+img{ max-width:100%; display:block; }
+::selection{ background:var(--accent); color:var(--surface); }
+
+.wrap{ max-width:1180px; margin:0 auto; padding-left:clamp(20px,5vw,64px); padding-right:clamp(20px,5vw,64px); }
+.eyebrow{ font-family:var(--font-body); font-size:13px; font-weight:600; color:var(--accent); letter-spacing:0.02em; }
+.fluid-h1{ font-size:clamp(30px,4.6vw,58px); }
+.fluid-h2{ font-size:clamp(30px,4.4vw,52px); }
+.fluid-h3{ font-size:clamp(22px,2.6vw,30px); }
+.lede{ font-size:clamp(17px,1.6vw,20px); max-width:58ch; }
+
+/* skip link */
+.skip-link{ position:absolute; left:-999px; top:0; background:var(--accent); color:#fff; padding:12px 18px; z-index:200; border-radius:0 0 8px 0; }
+.skip-link:focus{ left:0; }
+
+/* ============ NAV ============ */
+header.site-nav{
+  position:sticky; top:0; z-index:100;
+  border-bottom:1px solid transparent;
+}
+header.site-nav .bar{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px clamp(20px,5vw,64px);
+  transition:background .3s ease, border-color .3s ease, padding .3s ease, backdrop-filter .3s ease;
+}
+header.site-nav.scrolled .bar{
+  background:color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+  padding-top:12px; padding-bottom:12px;
+}
+.brand-mark{ display:flex; align-items:center; gap:10px; }
+.brand-photo{
+  width:36px; height:36px; border-radius:50%; object-fit:cover; flex-shrink:0;
+  box-shadow:0 0 0 1.5px var(--line), 0 2px 6px rgba(20,26,23,0.12);
+  transition:box-shadow .25s ease, transform .25s ease;
+}
+.brand-mark:hover .brand-photo{ box-shadow:0 0 0 1.5px var(--accent), 0 2px 8px rgba(20,26,23,0.16); transform:scale(1.04); }
+.brand-mark span{ font-family:var(--font-display); font-size:18px; white-space:nowrap; }
+nav.links{ display:flex; align-items:center; gap:clamp(10px,1.6vw,26px); }
+nav.links a{
+  font-size:14px; color:var(--ink-muted); position:relative; padding:6px 2px;
+  transition:color .2s ease;
+}
+nav.links a::after{
+  content:""; position:absolute; left:0; right:100%; bottom:0; height:1.5px; background:var(--accent);
+  transition:right .28s cubic-bezier(.2,.8,.2,1);
+}
+nav.links a:hover{ color:var(--ink); }
+nav.links a:hover::after, nav.links a.active::after{ right:0; }
+nav.links a.active{ color:var(--ink); }
+.nav-actions{ display:flex; align-items:center; gap:14px; }
+.theme-toggle{
+  width:38px; height:38px; border-radius:50%; border:1px solid var(--line);
+  background:var(--surface); display:flex; align-items:center; justify-content:center;
+  color:var(--ink); transition:transform .3s ease, border-color .2s ease;
+}
+.theme-toggle:hover{ border-color:var(--line-strong); }
+.theme-toggle svg{ width:17px; height:17px; transition:transform .5s cubic-bezier(.2,.8,.2,1); }
+.hamburger{ display:none; width:40px; height:40px; border-radius:50%; border:1px solid var(--line); background:var(--surface); align-items:center; justify-content:center; }
+.hamburger span, .hamburger span::before, .hamburger span::after{
+  content:""; display:block; width:16px; height:1.5px; background:var(--ink); position:relative; transition:transform .25s ease, opacity .25s ease;
+}
+.hamburger span::before{ position:absolute; top:-5px; }
+.hamburger span::after{ position:absolute; top:5px; }
+.hamburger.open span{ background:transparent; }
+.hamburger.open span::before{ top:0; transform:rotate(45deg); }
+.hamburger.open span::after{ top:0; transform:rotate(-45deg); }
+
+.mobile-sheet{
+  position:fixed; inset:0; z-index:99; background:var(--bg);
+  display:flex; flex-direction:column; padding:100px 28px 40px;
+  transform:translateY(-100%); transition:transform .38s cubic-bezier(.2,.8,.2,1);
+}
+.mobile-sheet.open{ transform:translateY(0); }
+.mobile-sheet a{ font-family:var(--font-display); font-size:28px; padding:14px 0; border-bottom:1px solid var(--line); }
+
+/* ---- responsive nav switch ---- */
+@media (max-width:880px){
+  nav.links{ display:none; }
+  .hamburger{ display:flex; }
+}
+@media (max-width:560px){
+  header.site-nav .bar{ padding-left:20px; padding-right:20px; }
+  .brand-mark span{ font-size:16px; }
+}
+
+/* ============ DECISION TRAIL (signature motif) ============ */
+.trail{
+  position:fixed; left:clamp(14px,2.6vw,40px); top:0; bottom:0; width:1px; z-index:40;
+  display:flex; flex-direction:column; align-items:center;
+  pointer-events:none;
+}
+.trail-line{ position:relative; width:1px; flex:1; background:var(--line); margin:120px 0; }
+.trail-fill{ position:absolute; top:0; left:0; width:100%; height:0%; background:var(--accent); transition:height .1s linear; }
+.trail-node{
+  position:absolute; left:50%; transform:translate(-50%,-50%);
+  width:9px; height:9px; border-radius:50%; background:var(--surface); border:1.5px solid var(--line-strong);
+  transition:background .3s ease, border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+}
+.trail-node.active{ background:var(--accent); border-color:var(--accent); box-shadow:0 0 0 5px var(--accent-soft); transform:translate(-50%,-50%) scale(1.15); }
+@media (max-width:1024px){ .trail{ display:none; } }
+
+/* custom cursor glow (desktop only) */
+.cursor-glow{
+  position:fixed; width:420px; height:420px; border-radius:50%; pointer-events:none; z-index:5;
+  background:radial-gradient(circle, color-mix(in srgb, var(--accent) 14%, transparent) 0%, transparent 68%);
+  transform:translate(-50%,-50%); left:-999px; top:-999px;
+  transition:opacity .3s ease; opacity:0;
+}
+.has-cursor .cursor-glow{ opacity:1; }
+@media (max-width:1024px){ .cursor-glow{ display:none; } }
+
+/* magnetic buttons */
+.magnetic{ display:inline-block; will-change:transform; }
+
+/* ============ REVEALS ============ */
+html.js .reveal{ opacity:0; transform:translateY(22px); clip-path:inset(0% 0% 8% 0%); transition:opacity .7s cubic-bezier(.2,.8,.2,1), transform .7s cubic-bezier(.2,.8,.2,1), clip-path .7s cubic-bezier(.2,.8,.2,1); }
+html.js .reveal.in{ opacity:1; transform:none; clip-path:inset(0% 0% 0% 0%); }
+.reveal.in{ opacity:1; transform:translateY(0); clip-path:inset(0% 0% 0% 0%); }
+.reveal-stagger > *{ transition-delay:calc(var(--i,0) * 70ms); }
+@media (prefers-reduced-motion: reduce){
+  .reveal{ opacity:1 !important; transform:none !important; clip-path:none !important; transition:none !important; }
+}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex; align-items:center; gap:8px; padding:13px 22px; border-radius:999px;
+  font-size:14.5px; font-weight:600; border:1px solid var(--line-strong);
+  transition:background .25s ease, color .25s ease, border-color .25s ease, transform .2s ease;
+  background:transparent; color:var(--ink);
+}
+.btn:hover{ transform:translateY(-2px); }
+.btn.primary{ background:var(--ink); color:var(--bg); border-color:var(--ink); }
+[data-theme="dark"] .btn.primary{ background:var(--accent); color:#06231C; border-color:var(--accent); }
+.btn.primary:hover{ background:var(--accent); border-color:var(--accent); color:#fff; }
+.btn.ghost:hover{ border-color:var(--accent); color:var(--accent); }
+.btn svg{ width:15px; height:15px; }
+
+/* ============ HERO ============ */
+.hero{ padding:clamp(64px,10vw,120px) 0 clamp(40px,7vw,90px); position:relative; }
+.hero-grid{ display:grid; grid-template-columns:1.15fr 0.85fr; gap:clamp(30px,5vw,60px); align-items:center; }
+@media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; } }
+.hero-kicker{ display:flex; align-items:center; gap:10px; margin-bottom:22px; }
+.hero-kicker .dot{ width:7px; height:7px; border-radius:50%; background:var(--accent); }
+.hero h1{ margin-bottom:22px; }
+.hero h1 .line{ display:block; overflow:hidden; }
+html.js .hero h1 .line span{ display:inline-block; transform:translateY(110%); transition:transform .8s cubic-bezier(.2,.9,.2,1); }
+html.js .hero.loaded h1 .line span{ transform:translateY(0); }
+.hero .headline-accent{ color:var(--accent); font-style:italic; }
+.hero p.lede{ margin-bottom:34px; }
+.hero p.para2{ margin-top:18px; max-width:56ch; }
+.hero-ctas{ display:flex; gap:14px; flex-wrap:wrap; margin-top:34px; }
+
+.photo-frame{ position:relative; aspect-ratio:4/5; max-height:560px; border-radius:var(--radius-l); overflow:hidden; background:var(--surface-elevated); box-shadow:var(--shadow-2); }
+.photo-frame img{ width:100%; height:100%; object-fit:cover; object-position:50% 18%; filter:saturate(0.94) contrast(1.02); transform:scale(1.02); transition:transform 1.4s cubic-bezier(.2,.8,.2,1); }
+@media (max-width:900px){ .photo-frame{ aspect-ratio:4/3; max-height:440px; } }
+@media (max-width:480px){ .photo-frame{ aspect-ratio:1/1; max-height:380px; } }
+.photo-frame:hover img{ transform:scale(1.08); }
+.photo-frame::after{
+  content:""; position:absolute; inset:0; border-radius:var(--radius-l);
+  box-shadow:inset 0 0 0 1px var(--line);
+  background:linear-gradient(200deg, color-mix(in srgb, var(--accent) 16%, transparent), transparent 45%);
+  mix-blend-mode:multiply;
+}
+[data-theme="dark"] .photo-frame::after{ mix-blend-mode:screen; opacity:.5; }
+.photo-tag{
+  position:absolute; left:18px; bottom:18px; background:color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter:blur(10px); border:1px solid var(--line); border-radius:999px; padding:8px 14px;
+  font-size:12.5px; display:flex; align-items:center; gap:8px;
+}
+.avatar-fallback{
+  width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(160deg, var(--accent-soft), var(--surface-elevated));
+  font-family:var(--font-display); font-size:120px; color:var(--accent);
+}
+
+.credibility{ margin-top:clamp(52px,7vw,84px); border-top:1px solid var(--line); padding-top:26px; display:flex; flex-wrap:wrap; gap:12px 30px; }
+.credibility .item{ display:flex; align-items:center; gap:9px; font-size:13.5px; color:var(--ink-muted); }
+.credibility .item svg{ width:15px; height:15px; color:var(--accent); flex-shrink:0; }
+
+/* ============ SECTION ============ */
+section{ padding:clamp(70px,9vw,140px) 0; position:relative; }
+.section-head{ margin-bottom:clamp(36px,5vw,56px); max-width:70ch; }
+.section-head .eyebrow{ display:block; margin-bottom:14px; }
+.section-head p{ margin-top:16px; }
+hr.divider{ border:none; border-top:1px solid var(--line); margin:0; }
+
+/* ============ ABOUT ============ */
+.about-grid{ display:grid; grid-template-columns:0.8fr 1.2fr; gap:clamp(30px,5vw,70px); }
+@media (max-width:860px){ .about-grid{ grid-template-columns:1fr; } }
+.about-copy p{ font-size:17px; margin-bottom:18px; }
+.about-copy p:last-child{ margin-bottom:0; }
+.about-stat-col{ display:flex; flex-direction:column; gap:22px; }
+.about-stat{ border-left:2px solid var(--accent); padding-left:16px; }
+.about-stat .num{ font-family:var(--font-display); font-size:34px; color:var(--ink); }
+.about-stat .label{ font-size:13.5px; color:var(--ink-muted); margin-top:2px; }
+
+/* ============ BENTO (What I Bring) ============ */
+.bento{ display:grid; grid-template-columns:repeat(6,1fr); gap:16px; }
+.bento .card{ grid-column:span 3; }
+.bento .card.wide{ grid-column:span 4; }
+.bento .card.narrow{ grid-column:span 2; }
+@media (max-width:1024px) and (min-width:761px){
+  .bento{ grid-template-columns:repeat(4,1fr); }
+  .bento .card{ grid-column:span 2; }
+  .bento .card.wide{ grid-column:span 4; }
+  .bento .card.narrow{ grid-column:span 2; }
+}
+@media (max-width:760px){ .bento .card, .bento .card.wide, .bento .card.narrow{ grid-column:span 6; } }
+.card{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-m);
+  padding:clamp(22px,3vw,32px); transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease;
+}
+.card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-2); border-color:var(--line-strong); }
+.card .idx{ font-size:12px; color:var(--accent); font-weight:700; margin-bottom:14px; letter-spacing:0.02em; }
+.card h3{ font-size:20px; margin-bottom:10px; }
+.card p{ font-size:14.5px; }
+
+/* ============ THESIS ============ */
+.thesis-wrap{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-l); padding:clamp(28px,4vw,54px); }
+.stat-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin:8px 0 46px; }
+@media (max-width:700px){ .stat-row{ grid-template-columns:1fr; } }
+.stat-box .counter{ font-family:var(--font-display); font-size:clamp(38px,5vw,56px); color:var(--accent); line-height:1; }
+.stat-box .stat-label{ margin-top:8px; font-size:14px; color:var(--ink-muted); }
+
+.rq-block{ border-left:2px solid var(--accent); padding-left:20px; margin-bottom:46px; }
+.rq-block .eyebrow{ display:block; margin-bottom:8px; }
+.rq-block p{ font-family:var(--font-display); font-size:clamp(19px,2.1vw,25px); font-style:italic; color:var(--ink); line-height:1.35; }
+
+.compare-bars{ display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-bottom:46px; }
+@media (max-width:600px){ .compare-bars{ grid-template-columns:1fr; } }
+.bar-item .bar-top{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; }
+.bar-item .bar-top .v{ font-family:var(--font-display); font-size:22px; }
+.bar-track{ height:10px; border-radius:999px; background:var(--line); overflow:hidden; }
+.bar-fill{ height:100%; border-radius:999px; width:0%; background:var(--accent); transition:width 1.4s cubic-bezier(.2,.8,.2,1); }
+.bar-fill.trust{ background:var(--ink-faint); }
+
+.maturity{ margin-bottom:46px; }
+.stairs-scroll{ position:relative; }
+.stairs{ display:flex; align-items:flex-end; gap:10px; margin-top:24px; }
+.swipe-hint{ display:none; align-items:center; gap:6px; font-size:12px; color:var(--ink-faint); margin-top:10px; }
+.swipe-hint svg{ width:13px; height:13px; }
+.stage-rows{ display:none; }
+@media (max-width:640px){
+  .stairs-scroll{ overflow-x:auto; padding:0 26px 10px 2px; scroll-snap-type:x proximity; -webkit-overflow-scrolling:touch; }
+  .stair{ flex:0 0 112px; scroll-snap-align:start; }
+  .stairs-scroll::after{
+    content:""; position:absolute; top:0; right:0; bottom:10px; width:36px;
+    background:linear-gradient(to right, transparent, var(--surface));
+    pointer-events:none;
+  }
+  .swipe-hint{ display:none !important; }
+  .stairs-scroll{ display:none; }
+  .stage-rows{ display:flex; flex-direction:column; gap:20px; margin-top:22px; }
+  .stage-row-top{ display:flex; align-items:center; gap:10px; margin-bottom:9px; }
+  .stage-num{
+    width:22px; height:22px; border-radius:50%; background:var(--accent-soft); color:var(--accent);
+    font-size:11.5px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .stage-name{ font-size:14.5px; font-weight:700; color:var(--ink); flex:1; }
+  .stage-pct{ font-family:var(--font-display); font-size:17px; color:var(--accent); flex-shrink:0; }
+  .stage-track{ height:9px; border-radius:999px; background:var(--line); overflow:hidden; margin-left:32px; }
+  .stage-fill{ height:100%; width:0%; border-radius:999px; background:var(--accent); transition:width 1.1s cubic-bezier(.2,.8,.2,1); }
+  .stage-desc{ font-size:12.5px; color:var(--ink-muted); margin-top:8px; margin-left:32px; }
+}
+.stair{ flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px; }
+.stair .step{
+  width:100%; border-radius:10px 10px 0 0; background:var(--accent-soft); position:relative; overflow:hidden;
+  transition:height 1s cubic-bezier(.2,.8,.2,1);
+}
+.stair .step .fill{ position:absolute; bottom:0; left:0; right:0; height:0%; background:var(--accent); transition:height 1.2s cubic-bezier(.2,.8,.2,1) .1s; }
+.stair .pct{ font-family:var(--font-display); font-size:17px; }
+.stair .name{ font-size:12.5px; font-weight:600; }
+.stair .desc{ font-size:11.5px; color:var(--ink-muted); }
+
+.finding-tiles{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:36px; }
+@media (max-width:760px){ .finding-tiles{ grid-template-columns:1fr; } }
+.finding-tile{ border:1px solid var(--line); border-radius:var(--radius-m); padding:20px; background:var(--surface-elevated); }
+.finding-tile h4{ font-size:15px; margin-bottom:8px; font-family:var(--font-body); font-weight:700; }
+.finding-tile p{ font-size:13.5px; }
+
+.pull-quote{ font-family:var(--font-display); font-style:italic; font-size:clamp(20px,2.4vw,28px); color:var(--ink); line-height:1.4; max-width:70ch; margin-bottom:30px; }
+.disclaimer{ font-size:12.5px; color:var(--ink-faint); border-top:1px solid var(--line); padding-top:18px; }
+.actions-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+
+/* ============ FEATURED WORK ============ */
+.flagship{
+  border:1px solid var(--line); border-radius:var(--radius-l); background:var(--surface);
+  padding:clamp(26px,4vw,48px); margin-bottom:26px; position:relative; overflow:hidden;
+}
+.flagship .tagrow{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+.tag{ font-size:11.5px; font-weight:700; padding:6px 12px; border-radius:999px; border:1px solid var(--line-strong); color:var(--ink-muted); }
+.tag.accent{ color:var(--accent); border-color:var(--accent); background:var(--accent-soft); }
+.flagship h3{ font-size:clamp(26px,3.2vw,36px); margin-bottom:14px; }
+.flagship .summary{ font-size:16px; max-width:70ch; margin-bottom:24px; }
+.flagship .note{ font-size:13px; color:var(--ink-faint); border-left:2px solid var(--line-strong); padding-left:14px; margin-bottom:26px; max-width:64ch; }
+.flagship-actions{ display:flex; gap:12px; flex-wrap:wrap; }
+
+.coming-wrap{ display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; margin-top:10px; align-items:stretch; }
+@media (max-width:980px){ .coming-wrap{ grid-template-columns:repeat(2, 1fr); } }
+@media (max-width:660px){ .coming-wrap{ grid-template-columns:1fr; } }
+.coming-card{
+  border:1.5px dashed var(--line-strong); border-radius:var(--radius-m); padding:24px; position:relative;
+  background:var(--surface); display:flex; flex-direction:column;
+  transition:border-color .3s ease, transform .3s cubic-bezier(.2,.8,.2,1);
+}
+.coming-card:hover{ border-color:var(--accent); transform:translateY(-3px); }
+.pulse-tag{ display:inline-flex; align-items:center; gap:7px; font-size:11.5px; font-weight:700; color:var(--accent); margin-bottom:14px; }
+.pulse-dot{ width:7px; height:7px; border-radius:50%; background:var(--accent); animation:pulse 1.8s ease-in-out infinite; }
+@keyframes pulse{ 0%,100%{ opacity:1; transform:scale(1);} 50%{ opacity:.4; transform:scale(0.7);} }
+@media (prefers-reduced-motion: reduce){ .pulse-dot{ animation:none; } .coming-card:hover{ transform:none; } }
+.coming-card h4{ font-size:17px; margin-bottom:10px; line-height:1.25; }
+.coming-card .kicker{ font-size:12px; color:var(--ink-faint); margin-bottom:10px; display:block; }
+.coming-card p{ font-size:13.5px; margin-top:auto; }
+
+/* solo variant: full-width banner when only one in-progress card is shown */
+.coming-card-solo{
+  border:1.5px dashed var(--line-strong); border-radius:var(--radius-l); padding:clamp(24px,4vw,40px);
+  background:var(--surface); display:grid; grid-template-columns:1.1fr 1.4fr; gap:clamp(20px,4vw,48px); align-items:center;
+  transition:border-color .3s ease, transform .3s cubic-bezier(.2,.8,.2,1);
+}
+.coming-card-solo:hover{ border-color:var(--accent); transform:translateY(-3px); }
+@media (prefers-reduced-motion: reduce){ .coming-card-solo:hover{ transform:none; } }
+@media (max-width:760px){ .coming-card-solo{ grid-template-columns:1fr; } }
+.coming-card-solo h4{ font-size:clamp(20px,2.4vw,26px); margin-bottom:0; line-height:1.25; }
+.coming-card-solo .kicker{ font-size:12.5px; color:var(--ink-faint); margin-bottom:10px; display:block; }
+.coming-card-solo p{ font-size:14.5px; }
+
+/* ---- Dialog / drawer ---- */
+dialog.case-dialog{
+  width:min(880px,92vw); max-height:88vh; border:none; border-radius:var(--radius-l); padding:0;
+  background:var(--surface-elevated); color:var(--ink); box-shadow:var(--shadow-2);
+}
+dialog.case-dialog::backdrop{ background:rgba(10,12,10,0.55); backdrop-filter:blur(3px); }
+.dialog-inner{ padding:clamp(24px,4vw,44px); overflow-y:auto; max-height:88vh; }
+.dialog-close{
+  position:sticky; top:0; float:right; width:38px; height:38px; border-radius:50%; border:1px solid var(--line);
+  background:var(--surface); display:flex; align-items:center; justify-content:center; margin-bottom:6px;
+}
+.dialog-inner h3{ font-size:clamp(24px,3vw,32px); margin-bottom:4px; margin-top:10px; clear:both;}
+.dialog-inner .dsub{ color:var(--accent); font-size:13px; font-weight:600; margin-bottom:24px; display:block;}
+.case-sub{ color:var(--accent); font-size:13px; font-weight:600; margin-bottom:20px; display:block;}
+.case-expand{ max-height:0; overflow:hidden; transition:max-height .5s cubic-bezier(.2,.8,.2,1); }
+.case-expand-inner{ padding-top:30px; margin-top:26px; border-top:1px solid var(--line); }
+@media (prefers-reduced-motion: reduce){ .case-expand{ transition:none; } }
+.case-toggle{ display:inline-flex; align-items:center; gap:8px; }
+.case-toggle svg{ width:15px; height:15px; transition:transform .3s ease; }
+.case-toggle.open svg{ transform:rotate(180deg); }
+.dblock{ margin-bottom:26px; }
+.dblock h5{ font-family:var(--font-body); font-size:13px; font-weight:700; text-transform:none; color:var(--ink); margin-bottom:8px; }
+.dblock p, .dblock li{ font-size:14.5px; }
+.dblock ul{ margin:0; padding-left:18px; }
+.dblock li{ margin-bottom:6px; }
+.metric-chip-row{ display:flex; flex-wrap:wrap; gap:8px; }
+.metric-chip{ font-size:12.5px; border:1px solid var(--line); border-radius:8px; padding:8px 12px; background:var(--surface); }
+.phase-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+@media (max-width:700px){ .phase-row{ grid-template-columns:1fr; } }
+.phase{ border:1px solid var(--line); border-radius:var(--radius-s); padding:14px; }
+.phase .ph-t{ font-weight:700; font-size:13px; color:var(--accent); margin-bottom:6px; }
+/* ---- flow map diagram ---- */
+.flowmap-wrap{ margin-top:14px; position:relative; }
+.flowmap-scroll{ overflow-x:auto; padding-bottom:6px; }
+.flowmap-svg{ min-width:640px; width:100%; height:auto; display:block; }
+.flowmap-legend{ display:flex; flex-wrap:wrap; gap:14px; margin-top:14px; font-size:11.5px; color:var(--ink-muted); }
+.flowmap-legend .sw{ display:inline-flex; align-items:center; gap:6px; }
+.flowmap-legend .dot{ width:9px; height:9px; border-radius:50%; display:inline-block; }
+.diagram-swipe-hint{ display:none; align-items:center; gap:6px; font-size:12px; color:var(--ink-faint); margin-top:8px; }
+.diagram-swipe-hint svg{ width:13px; height:13px; }
+@media (max-width:700px){
+  .flowmap-wrap::after, .archflow-wrap::after{
+    content:""; position:absolute; top:0; right:0; bottom:20px; width:32px;
+    background:linear-gradient(to right, transparent, var(--surface));
+    pointer-events:none;
+  }
+  .diagram-swipe-hint{ display:flex; }
+}
+
+/* ---- impact/effort quadrant ---- */
+.quadrant-wrap{ margin-top:14px; }
+.quadrant-svg{ width:100%; height:auto; display:block; max-width:520px; }
+
+/* ---- architecture flow diagram ---- */
+.archflow-wrap{ margin-top:14px; position:relative; }
+.archflow-scroll{ overflow-x:auto; padding-bottom:6px; }
+.archflow-svg{ min-width:560px; width:100%; height:auto; display:block; }
+
+.impact-grid{ display:grid; grid-template-columns:auto 1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:var(--radius-s); overflow:hidden; font-size:13px; margin-top:10px;}
+.impact-grid > div{ background:var(--surface); padding:10px 12px; }
+.impact-grid .hd{ font-weight:700; background:var(--surface-elevated); }
+@media (max-width:520px){
+  .impact-grid{ font-size:11.5px; }
+  .impact-grid > div{ padding:8px; }
+}
+
+/* ============ TECH CURIOSITY ============ */
+.tech-card{ display:flex; gap:26px; align-items:center; border:1px solid var(--line); border-radius:var(--radius-l); padding:clamp(22px,3vw,36px); background:var(--surface); }
+@media (max-width:700px){ .tech-card{ flex-direction:column; align-items:flex-start; } }
+.tech-thumb{ width:180px; height:130px; flex-shrink:0; border-radius:var(--radius-m); background:linear-gradient(150deg,var(--accent-soft),var(--surface-elevated)); display:flex; align-items:center; justify-content:center; border:1px solid var(--line); }
+.tech-thumb svg{ width:46px; height:46px; color:var(--accent); }
+.tech-meta{ display:flex; gap:10px; margin:14px 0; flex-wrap:wrap; }
+
+/* ============ RESUME ============ */
+.resume-grid{ display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
+@media (max-width:860px){ .resume-grid{ grid-template-columns:1fr; } }
+.pill-list{ display:flex; flex-wrap:wrap; gap:9px; margin-top:6px; }
+.pill{ font-size:12.5px; border:1px solid var(--line); border-radius:999px; padding:7px 13px; color:var(--ink-muted); }
+.cert-cards{ display:flex; flex-direction:column; gap:12px; margin-top:22px; }
+.cert-card{ display:flex; align-items:center; justify-content:space-between; border:1px solid var(--line); border-radius:var(--radius-s); padding:14px 18px; background:var(--surface); }
+.cert-card .status{ font-size:11.5px; font-weight:700; padding:5px 10px; border-radius:999px; }
+.status.done{ background:var(--accent-soft); color:var(--accent); }
+.status.progress{ background:var(--line); color:var(--ink-muted); }
+.resume-preview{
+  display:block; position:relative; border:1px solid var(--line); border-radius:var(--radius-m);
+  overflow:hidden; background:var(--surface); box-shadow:var(--shadow-1);
+  transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .3s ease;
+}
+.resume-preview:hover{ transform:translateY(-3px); box-shadow:var(--shadow-2); border-color:var(--accent); }
+.resume-preview img{ width:100%; height:auto; display:block; }
+.resume-preview-cta{
+  position:absolute; left:0; right:0; bottom:0; padding:14px 18px;
+  font-size:13px; font-weight:600; color:var(--surface);
+  background:linear-gradient(to top, rgba(14,26,22,0.88), rgba(14,26,22,0));
+}
+@media (prefers-reduced-motion: reduce){ .resume-preview:hover{ transform:none; } }
+.pdf-fallback{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; color:var(--ink-muted); font-size:13.5px; text-align:center; padding:20px;}
+.pdf-actions{ display:flex; gap:10px; padding:14px; border-top:1px solid var(--line); flex-wrap:wrap; }
+
+/* ============ FUTURE ============ */
+.future-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+@media (max-width:760px){ .future-grid{ grid-template-columns:1fr; } }
+
+/* ============ CONTACT ============ */
+.contact-wrap{ display:flex; flex-direction:column; align-items:flex-start; gap:26px; }
+.contact-links{ display:flex; gap:14px; flex-wrap:wrap; }
+
+/* ============ FOOTER ============ */
+footer{ border-top:1px solid var(--line); padding:40px 0; }
+.footer-row{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+.footer-row nav{ display:flex; gap:18px; flex-wrap:wrap; }
+.footer-row nav a{ font-size:13px; color:var(--ink-muted); }
+.footer-row .fine{ font-size:12px; color:var(--ink-faint); }
+@media (max-width:760px){
+  .footer-row{ flex-direction:column; align-items:flex-start; text-align:left; }
+  .footer-row .fine{ order:3; }
+}
+
+/* accessibility focus */
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:4px; }
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- decision trail -->
+<div class="trail" aria-hidden="true">
+  <div class="trail-line">
+    <div class="trail-fill" id="trailFill"></div>
+  </div>
+</div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header class="site-nav" id="siteNav">
+  <div class="bar">
+    <a href="#top" class="brand-mark" aria-label="Yash Todkari, home">
+      <img src="assets/favicon.svg" alt="" class="brand-photo" width="36" height="36">
+      <span>Yash Todkari</span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#travel-commerce">Travel &amp; Commerce</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#research">Research</a>
+      <a href="#featured-work">Featured Work</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke-linecap="round"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileSheet"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-sheet" id="mobileSheet">
+  <a href="#about">About</a>
+  <a href="#travel-commerce">Travel &amp; Commerce</a>
+  <a href="#capabilities">Capabilities</a>
+  <a href="#research">Research</a>
+  <a href="#featured-work">Featured Work</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-kicker"><span class="dot"></span><span class="eyebrow">Product Manager · Product Owner</span></div>
+        <h1 class="fluid-h1">
+          <span class="line"><span>I've worked where travel and retail products break.</span></span>
+          <span class="line"><span class="headline-accent">Now I build the decisions that stop them breaking.</span></span>
+        </h1>
+        <p class="lede">Product manager for travel and commerce platforms, with two years inside airline reservations and eCommerce release testing, and original research on how product teams adopt AI.</p>
+        <p class="para2">Double Master's graduate across Italy and Poland, with research in product discovery and practical exposure to market analysis, platform analysis, stakeholder coordination, and requirements validation. Looking to join international product teams where thoughtful discovery leads to measurable outcomes.</p>
+        <div class="hero-ctas">
+          <a href="#featured-work" class="btn primary magnetic">View Case Studies</a>
+          <a href="assets/resume.pdf" download class="btn ghost magnetic">Download Resume</a>
+          <a href="#contact" class="btn ghost magnetic">Contact Me</a>
+        </div>
+      </div>
+      <div class="photo-frame reveal" id="heroPhoto">
+        <img src="assets/profile-photo.jpg" alt="Portrait of Yash Todkari" onerror="this.parentElement.innerHTML='<div class=avatar-fallback>YT</div>'">
+        <div class="photo-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Milan, Italy
+        </div>
+      </div>
+    </div>
+
+    <div class="credibility reveal reveal-stagger" id="credStrip">
+      <span class="item" style="--i:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>Double Master's Graduate</span>
+      <span class="item" style="--i:1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 16l-5.6 3.1 1.4-6.3-4.8-4.3 6.4-.6L12 2Z"/></svg>Aha! Certified Product Professional</span>
+      <span class="item" style="--i:2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>GenAI Product Discovery Research</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST QUOTE (moved up for front-loaded impact) ============ -->
+<section id="trust-quote" style="padding:clamp(30px,5vw,56px) 0 0;">
+  <div class="wrap">
+    <div class="reveal" style="border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:clamp(28px,4vw,44px) 0;">
+      <p class="pull-quote" style="max-width:60ch; margin-bottom:10px;">"The advantage no longer belongs to the teams that use AI the most — but to those who have learned, precisely, when not to trust it."</p>
+      <p style="font-size:13px; color:var(--ink-faint);">From my Master's thesis on how Product Managers adopt Generative AI in discovery work — <a href="#research" style="color:var(--accent); text-decoration:underline;">read the findings ↓</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="display:block;margin-bottom:14px;">About</span>
+        <h2 class="fluid-h2">Structure first, then the solution.</h2>
+      </div>
+      <div class="about-copy reveal">
+        <p>My path runs through two Master's programmes — International Economics &amp; Commerce at UNIVPM in Ancona, Italy, and International Management at Gdańsk University of Technology, Poland — a route that forced me to keep re-explaining ambiguous problems to new audiences, in new languages, from scratch. That habit became the throughline of my product thinking: before proposing anything, frame the problem so precisely that the solution feels almost obvious.</p>
+        <p>My Master's thesis pushed that habit into research: a mixed-methods study of how Product Managers actually adopt Generative AI in discovery work, built on an 82-respondent practitioner survey and four enterprise case studies. It produced an original 5-stage adoption maturity model and a framing — the Discernment Principle — that treats AI adoption as a question of calibrated trust rather than raw usage.</p>
+        <p>Outside the thesis, that same structured instinct shows up in my work across consulting, platform-issue analysis, and eCommerce and travel operations — reading recurring error patterns, coordinating with UK-based stakeholders, and turning findings into requirements a delivery team could act on. More on that below. The Notion Product Teardown is the clearest proof point of how I work under pressure: a full activation-flow critique, from flow-mapping through falsifiable experiment design, built independently as coursework in days rather than weeks.</p>
+        <p>I'm now looking for Product Manager and Product Owner roles on international product teams — ideally ones where discovery is taken as seriously as delivery.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAVEL & COMMERCE ============ -->
+<section id="travel-commerce">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Where My Product Instincts Come From</span>
+      <h2 class="fluid-h2">Travel &amp; commerce operations.</h2>
+      <p>Before I framed problems in a classroom, I fixed them live. This is the operational experience behind the case studies on this page — and it's the reason I read a booking or checkout flow differently than most candidates applying alongside me.</p>
+    </div>
+    <div class="bento reveal reveal-stagger">
+      <div class="card" style="--i:0">
+        <div class="idx">Airline Reservations</div>
+        <h3>IGT Solutions — Air India Process, Pune</h3>
+        <p style="margin-bottom:10px; font-weight:600; color:var(--ink);">14 months · Mar 2021 – May 2022</p>
+        <p>I resolved booking, fare-rule, cancellation, and refund failures on Air India's reservation platform, working directly with customers at the point of failure. I built working fluency in reservation workflows including PNR handling, rebooking, and refund paths.</p>
+      </div>
+      <div class="card" style="--i:1">
+        <div class="idx">eCommerce Release Validation</div>
+        <h3>Capita, Pune — Next UK eCommerce</h3>
+        <p style="margin-bottom:10px; font-weight:600; color:var(--ink);">7 months · May 2022 – Dec 2022</p>
+        <p>I ran pre-release quality verification on Next's eCommerce storefront across desktop and handset views, catching pricing, imagery, link, and rendering defects on staging before each go-live — reporting and tracking them with a UK-based engineering team against fixed commercial launch dates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT I BRING ============ -->
+<section id="capabilities">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What I Bring</span>
+      <h2 class="fluid-h2">Six ways of working, one habit underneath.</h2>
+    </div>
+    <div class="bento reveal reveal-stagger">
+      <div class="card wide" style="--i:0">
+        <div class="idx">01</div>
+        <h3>Product Discovery</h3>
+        <p>Able to structure ambiguous problems, identify user and business needs, compare opportunities, and translate insight into product decisions.</p>
+      </div>
+      <div class="card narrow" style="--i:1">
+        <div class="idx">02</div>
+        <h3>Roadmapping &amp; Prioritization</h3>
+        <p>Connecting product opportunities to business objectives, evaluating trade-offs, and organizing initiatives around impact and feasibility.</p>
+      </div>
+      <div class="card narrow" style="--i:2">
+        <div class="idx">03</div>
+        <h3>Business Analysis</h3>
+        <p>Analyzing platform issues, requirements, recurring errors, operational patterns, and business impact.</p>
+      </div>
+      <div class="card wide" style="--i:3">
+        <div class="idx">04</div>
+        <h3>Generative AI in Product Discovery</h3>
+        <p>Research focus on how Product Managers adopt GenAI, where it creates value, and why human judgement, context, and governance remain essential.</p>
+      </div>
+      <div class="card wide" style="--i:4">
+        <div class="idx">05</div>
+        <h3>Stakeholder Management</h3>
+        <p>Translating analysis into clear communication for cross-functional and international stakeholders.</p>
+      </div>
+      <div class="card narrow" style="--i:5">
+        <div class="idx">06</div>
+        <h3>Data-Informed Decisions</h3>
+        <p>KPI thinking, reporting, structured analysis, SQL, Power BI, Google Analytics, and evidence-based prioritization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH / THESIS ============ -->
+<section id="research">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Master's Thesis | Applied Product Research</span>
+      <h2 class="fluid-h2">Generative AI in Product Discovery</h2>
+      <p>How Product Managers are integrating GenAI into discovery work — and what that reveals about trust, not just usage.</p>
+    </div>
+
+    <div class="thesis-wrap reveal">
+      <div class="stat-row">
+        <div class="stat-box"><div class="counter" data-count="82">82</div><div class="stat-label">PM/PO survey respondents</div></div>
+        <div class="stat-box"><div class="counter" data-count="4">4</div><div class="stat-label">Enterprise case studies — Figma, Notion, Miro, Atlassian</div></div>
+        <div class="stat-box"><div class="counter" data-count="5">5</div><div class="stat-label">Stage original adoption maturity model</div></div>
+      </div>
+
+      <div class="rq-block">
+        <span class="eyebrow">Research Question</span>
+        <p>How are Product Managers integrating Generative AI into product discovery, and what are the perceived impacts on efficiency, output quality, trust, and role evolution?</p>
+      </div>
+
+      <div style="margin-bottom:46px;">
+        <h4 style="font-family:var(--font-body);font-weight:700;font-size:15px;margin-bottom:14px;">Methodology Snapshot</h4>
+        <p style="max-width:75ch;font-size:15px;">A convergent mixed-methods approach: an 82-respondent PM/PO survey combining descriptive statistics with open-text thematic analysis, triangulated against four enterprise case studies (Figma, Notion, Miro, Atlassian) for organisational-level evidence.</p>
+      </div>
+
+      <div>
+        <h4 style="font-family:var(--font-body);font-weight:700;font-size:15px;margin-bottom:16px;">Usefulness vs. Trust</h4>
+        <div class="compare-bars">
+          <div class="bar-item">
+            <div class="bar-top"><span>Usefulness</span><span class="v" data-target="4.09">4.09</span></div>
+            <div class="bar-track"><div class="bar-fill" data-pct="82"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-top"><span>Trust</span><span class="v" data-target="3.43">3.43</span></div>
+            <div class="bar-track"><div class="bar-fill trust" data-pct="68.7"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="maturity">
+        <h4 style="font-family:var(--font-body);font-weight:700;font-size:15px;margin-bottom:6px;">The Refined GenAI Adoption Maturity Model — Original Contribution</h4>
+        <p style="font-size:14px;">Teams advance not by using AI more, but by using it with greater discernment, calibrated trust, and governance maturity.</p>
+
+        <!-- desktop / tablet: ascending staircase -->
+        <div class="stairs-scroll">
+          <div class="stairs">
+            <div class="stair">
+              <div class="step" data-h="26" style="height:26px;"><div class="fill" data-fillpct="8"></div></div>
+              <div class="pct">~2%</div><div class="name">No Adoption</div><div class="desc">Manual methods, GenAI unused</div>
+            </div>
+            <div class="stair">
+              <div class="step" data-h="52" style="height:52px;"><div class="fill" data-fillpct="12"></div></div>
+              <div class="pct">~5%</div><div class="name">Experimental</div><div class="desc">Curiosity-driven trials</div>
+            </div>
+            <div class="stair">
+              <div class="step" data-h="80" style="height:80px;"><div class="fill" data-fillpct="40"></div></div>
+              <div class="pct">~24%</div><div class="name">Selective</div><div class="desc">High-value tasks, heavy checking</div>
+            </div>
+            <div class="stair">
+              <div class="step" data-h="118" style="height:118px;"><div class="fill" data-fillpct="95"></div></div>
+              <div class="pct">~62%</div><div class="name">Integrated</div><div class="desc">Daily, broad use — the modal PM</div>
+            </div>
+            <div class="stair">
+              <div class="step" data-h="150" style="height:150px;"><div class="fill" data-fillpct="14"></div></div>
+              <div class="pct">~6%</div><div class="name">Strategic</div><div class="desc">Agentic pipelines, governance — "strategic editor"</div>
+            </div>
+          </div>
+        </div>
+        <div class="swipe-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          Swipe to see all 5 stages
+        </div>
+
+        <!-- mobile: aligned horizontal bar rows, no scrolling required -->
+        <div class="stage-rows">
+          <div class="stage-row">
+            <div class="stage-row-top"><span class="stage-num">1</span><span class="stage-name">No Adoption</span><span class="stage-pct">~2%</span></div>
+            <div class="stage-track"><div class="stage-fill" data-rowpct="6"></div></div>
+            <div class="stage-desc">Manual methods, GenAI unused</div>
+          </div>
+          <div class="stage-row">
+            <div class="stage-row-top"><span class="stage-num">2</span><span class="stage-name">Experimental</span><span class="stage-pct">~5%</span></div>
+            <div class="stage-track"><div class="stage-fill" data-rowpct="8"></div></div>
+            <div class="stage-desc">Curiosity-driven trials</div>
+          </div>
+          <div class="stage-row">
+            <div class="stage-row-top"><span class="stage-num">3</span><span class="stage-name">Selective</span><span class="stage-pct">~24%</span></div>
+            <div class="stage-track"><div class="stage-fill" data-rowpct="39"></div></div>
+            <div class="stage-desc">High-value tasks, heavy checking</div>
+          </div>
+          <div class="stage-row">
+            <div class="stage-row-top"><span class="stage-num">4</span><span class="stage-name">Integrated</span><span class="stage-pct">~62%</span></div>
+            <div class="stage-track"><div class="stage-fill" data-rowpct="100"></div></div>
+            <div class="stage-desc">Daily, broad use — the modal PM</div>
+          </div>
+          <div class="stage-row">
+            <div class="stage-row-top"><span class="stage-num">5</span><span class="stage-name">Strategic</span><span class="stage-pct">~6%</span></div>
+            <div class="stage-track"><div class="stage-fill" data-rowpct="10"></div></div>
+            <div class="stage-desc">Agentic pipelines, governance — "strategic editor"</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="finding-tiles">
+        <div class="finding-tile"><h4>Routine, not experimental</h4><p>93% of PMs use GenAI daily or several times a week across discovery work.</p></div>
+        <div class="finding-tile"><h4>Barriers are about trust</h4><p>Hallucination, missing product context, and privacy/policy limits — not usability — are the binding constraints.</p></div>
+        <div class="finding-tile"><h4>The role is reshaped</h4><p>Manual production shifts toward judgement and orchestration — the "strategic editor."</p></div>
+      </div>
+
+      <p class="pull-quote">"The advantage no longer belongs to the teams that use AI the most — but to those who have learned, precisely, when not to trust it."</p>
+
+      <p class="disclaimer">This exploratory study is based on a convenience sample. Findings should be read as directional practitioner evidence rather than statistical generalization to the full Product Manager population.</p>
+
+      <div class="actions-row">
+        <a href="assets/genai-product-discovery.pdf" target="_blank" rel="noopener noreferrer" class="btn ghost">Open in New Tab</a>
+        <a href="assets/genai-product-discovery.pdf" download class="btn primary">Download PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED WORK ============ -->
+<section id="featured-work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Featured Work</span>
+      <h2 class="fluid-h2">Case studies.</h2>
+      <p>Each one structured the same way: frame the problem, ground it in evidence, argue the other side before recommending a change, and propose falsifiable next steps.</p>
+    </div>
+
+    <!-- Notion Teardown (lead) -->
+    <article class="flagship reveal" id="case-notion">
+      <div class="tagrow">
+        <span class="tag accent">Independent Product Teardown</span>
+        <span class="tag">Coursework Case Study</span>
+      </div>
+      <h3>Notion Product Teardown — Activation Flow Analysis</h3>
+      <p class="summary">An independent teardown of Notion's sign-up-to-first-workspace activation flow. Nine screens severity-scored, three root causes synthesised, and three falsifiable experiments, each carrying a pre-committed decision for what I would do if the result came back flat.</p>
+      <p class="note">Independent coursework analysis, not an official Notion document. Inferred figures are labeled by confidence level (High / Medium / Low).</p>
+      <div class="flagship-actions">
+        <button class="btn primary case-toggle" onclick="toggleCase('notion-expand', this)" aria-expanded="false" aria-controls="notion-expand">
+          <span class="toggle-label">View Full Case Study</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <a href="assets/notion-product-teardown.pdf" target="_blank" rel="noopener noreferrer" class="btn ghost">Open PDF in New Tab</a>
+        <a href="assets/notion-product-teardown.pdf" download class="btn ghost">Download PDF</a>
+      </div>
+
+      <div class="case-expand" id="notion-expand">
+        <div class="case-expand-inner">
+          <span class="case-sub">Independent Coursework Case Study</span>
+
+          <div class="dblock" style="background:var(--accent-soft); border-radius:var(--radius-m); padding:18px; border:1px solid var(--line);">
+            <h5>How I approached it</h5>
+            <p>Before recommending any change, I argued the strongest possible case for leaving it alone. Notion's AI-first default is not a lazy design choice, it is their first real answer to the blank-page problem that has been their most-cited weakness for a decade. My recommendation only survives because a low-friction disclosure preserves that strategic bet entirely rather than reversing it. Every experiment also carries a pre-committed decision for what I would do if the result came back flat, including one where a flat result is itself the evidence base for a larger engineering investment rather than a reason to abandon the problem.</p>
+          </div>
+          <div class="dblock"><h5>Frame</h5><p><strong>Goal:</strong> evaluate how effectively Notion's sign-up-to-first-workspace flow converts a first-time user into a structured, reusable workspace. <strong>Persona:</strong> "Mani," a 24-year-old early-career PM job-hunting, comparing Notion against a Google Sheet.</p></div>
+          <div class="dblock"><h5>Job To Be Done</h5><p>"When I am actively job hunting, my data is scattered across notes, spreadsheets, and to-do lists... I want to build one common workflow that helps me track applications, portfolio work, interview prep, and networking follow-ups."</p></div>
+          <div class="dblock"><h5>Business Model Snapshot</h5><p>Freemium subscription (Free / Plus / Business / Enterprise). Proposed North Star: % of new signups reaching a self-built structured page within 24h, plus supporting funnel and guardrail metrics.</p></div>
+          <div class="dblock"><h5>Flow Map</h5>
+            <p>9 screens observed, severity-scored 1–5. The AI-chat homepage (severity 5) was identified as the highest-risk drop-off point.</p>
+            <div class="flowmap-wrap">
+              <div class="flowmap-scroll">
+              <svg class="flowmap-svg" viewBox="0 0 900 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Notion flow map, 8 screens in sequence plus one edge-case screen, color-coded by severity 1 to 5">
+                <line x1="50" y1="50" x2="750" y2="50" stroke="var(--line-strong)" stroke-width="2"/>
+                <line x1="410" y1="50" x2="410" y2="130" stroke="var(--line-strong)" stroke-width="2" stroke-dasharray="4 4"/>
+                <!-- main chain: 8 nodes -->
+                <g font-family="inherit">
+                  <!-- 1 Homepage sev1 -->
+                  <circle cx="50" cy="50" r="16" fill="#0E6B57"/><text x="50" y="55" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">1</text>
+                  <text x="50" y="82" text-anchor="middle" font-size="11" fill="var(--ink-muted)">Homepage</text>
+                  <!-- 2 Sign-up sev2 -->
+                  <circle cx="150" cy="50" r="16" fill="#4C9A82"/><text x="150" y="55" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">2</text>
+                  <text x="150" y="82" text-anchor="middle" font-size="11" fill="var(--ink-muted)">Sign-up</text>
+                  <!-- 3 Onboarding sev1 -->
+                  <circle cx="250" cy="50" r="16" fill="#0E6B57"/><text x="250" y="55" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">3</text>
+                  <text x="250" y="82" text-anchor="middle" font-size="11" fill="var(--ink-muted)">Onboarding</text>
+                  <!-- 4 Desktop prompt sev2 -->
+                  <circle cx="350" cy="50" r="16" fill="#4C9A82"/><text x="350" y="55" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">4</text>
+                  <text x="350" y="82" text-anchor="middle" font-size="11" fill="var(--ink-muted)">App Prompt</text>
+                  <!-- 5 AI homepage sev5 (largest, highest risk) -->
+                  <circle cx="470" cy="50" r="22" fill="#D64545"/><text x="470" y="56" text-anchor="middle" font-size="14" fill="#fff" font-weight="700">5</text>
+                  <text x="470" y="90" text-anchor="middle" font-size="11.5" fill="var(--ink)" font-weight="700">AI Homepage</text>
+                  <text x="470" y="103" text-anchor="middle" font-size="10" fill="var(--ink-faint)">highest risk</text>
+                  <!-- 6 After AI prompt sev1 -->
+                  <circle cx="580" cy="50" r="16" fill="#0E6B57"/><text x="580" y="55" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">6</text>
+                  <text x="580" y="82" text-anchor="middle" font-size="11" fill="var(--ink-muted)">AI Prompt</text>
+                  <!-- 7 Permission sev2 -->
+                  <circle cx="670" cy="50" r="16" fill="#4C9A82"/><text x="670" y="55" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">7</text>
+                  <text x="670" y="82" text-anchor="middle" font-size="11" fill="var(--ink-muted)">Permission</text>
+                  <!-- 8 Final workspace sev3 -->
+                  <circle cx="750" cy="50" r="18" fill="#D9A441"/><text x="750" y="55" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">8</text>
+                  <text x="750" y="84" text-anchor="middle" font-size="11" fill="var(--ink-muted)">Workspace</text>
+                  <!-- 9 edge case, branches below node 5 -->
+                  <circle cx="410" cy="150" r="18" fill="#E07B39"/><text x="410" y="155" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">9</text>
+                  <text x="410" y="180" text-anchor="middle" font-size="11" fill="var(--ink-muted)">Manual/Template (edge case)</text>
+                </g>
+              </svg>
+              </div>
+              <div class="diagram-swipe-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+                Swipe to see all 9 screens
+              </div>
+              <div class="flowmap-legend">
+                <span class="sw"><span class="dot" style="background:#0E6B57;"></span>Severity 1 — none</span>
+                <span class="sw"><span class="dot" style="background:#4C9A82;"></span>Severity 2 — minor</span>
+                <span class="sw"><span class="dot" style="background:#D9A441;"></span>Severity 3 — moderate</span>
+                <span class="sw"><span class="dot" style="background:#E07B39;"></span>Severity 4 — high</span>
+                <span class="sw"><span class="dot" style="background:#D64545;"></span>Severity 5 — highest risk</span>
+              </div>
+            </div>
+          </div>
+          <div class="dblock"><h5>Screen Teardowns</h5><p>Element-level analysis of 4 selected screens: onboarding personalization, AI-chat homepage, manual/template blank path, final built workspace.</p></div>
+          <div class="dblock"><h5>Friction Log Synthesis</h5><ul>
+            <li>A — AI-first default hides alternatives</li>
+            <li>B — Output quality vs. perceived AI capability gap</li>
+            <li>C — Stacked minor friction points</li>
+          </ul></div>
+          <div class="dblock"><h5>Top 3 Problems — Impact vs. Effort</h5>
+            <div class="quadrant-wrap">
+              <svg class="quadrant-svg" viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Impact versus effort quadrant chart plotting the three prioritized problems">
+                <!-- quadrant backgrounds -->
+                <rect x="60" y="20" width="200" height="170" fill="var(--accent-soft)" opacity="0.55"/>
+                <rect x="260" y="20" width="200" height="170" fill="var(--accent-soft)" opacity="0.28"/>
+                <rect x="60" y="190" width="200" height="170" fill="var(--line)" opacity="0.35"/>
+                <rect x="260" y="190" width="200" height="170" fill="var(--line)" opacity="0.2"/>
+                <text x="160" y="40" text-anchor="middle" font-size="11.5" font-weight="700" fill="var(--accent)">QUICK WINS</text>
+                <text x="360" y="40" text-anchor="middle" font-size="11.5" font-weight="700" fill="var(--accent)">DO NOW</text>
+                <text x="160" y="210" text-anchor="middle" font-size="11.5" font-weight="700" fill="var(--ink-faint)">DROP</text>
+                <text x="360" y="210" text-anchor="middle" font-size="11.5" font-weight="700" fill="var(--ink-faint)">PLAN IT</text>
+                <!-- axes -->
+                <line x1="60" y1="360" x2="460" y2="360" stroke="var(--line-strong)" stroke-width="1.5"/>
+                <line x1="60" y1="20" x2="60" y2="360" stroke="var(--line-strong)" stroke-width="1.5"/>
+                <text x="260" y="390" text-anchor="middle" font-size="12" fill="var(--ink-muted)">Effort →</text>
+                <text x="24" y="190" text-anchor="middle" font-size="12" fill="var(--ink-muted)" transform="rotate(-90 24 190)">Impact →</text>
+                <!-- Problem 1: AI-first default — High impact, Low/Medium effort -->
+                <circle cx="175" cy="65" r="11" fill="#0E6B57"/>
+                <text x="175" y="50" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">P1</text>
+                <!-- Problem 2: Output quality — two connected points (messaging fix = low effort, real fix = high effort) -->
+                <line x1="200" y1="90" x2="360" y2="70" stroke="var(--ink-faint)" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <circle cx="200" cy="90" r="9" fill="#4C9A82"/>
+                <circle cx="360" cy="70" r="11" fill="#4C9A82"/>
+                <text x="200" y="112" text-anchor="middle" font-size="10" fill="var(--ink-muted)">P2 (messaging)</text>
+                <text x="360" y="55" text-anchor="middle" font-size="10" fill="var(--ink-muted)">P2 (real fix)</text>
+                <!-- Problem 3: Stacked friction — Low/Medium impact, Low effort -->
+                <circle cx="130" cy="240" r="9" fill="#D9A441"/>
+                <text x="130" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">P3</text>
+              </svg>
+            </div>
+            <div class="impact-grid" style="margin-top:18px;">
+              <div class="hd"></div><div class="hd">Impact</div><div class="hd">Effort · Verdict</div>
+              <div>P1 — AI-first default hides alternatives</div><div>High</div><div>Low/Medium — Change</div>
+              <div>P2 — Output quality vs. perceived capability</div><div>Medium/High</div><div>High (real fix) / Low (messaging) — Change</div>
+              <div>P3 — Stacked minor friction</div><div>Low/Medium</div><div>Low — Change confirmation step</div>
+            </div>
+          </div>
+          <div class="dblock"><h5>Top Finding</h5><p>Notion's AI-chat-first default hides manual/template alternatives (severity 5), with a proposed disclosure experiment measuring path-split shift across 5,000 users per arm.</p></div>
+          <div class="dblock"><h5>Falsifiable Experiments</h5><p>Three A/B tests, each with a hypothesis, primary metric, guardrails, audience/duration, and a pre-committed action if results come back flat.</p></div>
+
+          <div class="pdf-cta-row">
+            <a href="assets/notion-product-teardown.pdf" target="_blank" rel="noopener noreferrer" class="btn ghost">Open PDF in New Tab</a>
+            <a href="assets/notion-product-teardown.pdf" download class="btn primary">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Spotify Free-Tier Discovery Friction (2nd) -->
+    <article class="flagship reveal" id="case-spotify">
+      <div class="tagrow">
+        <span class="tag accent">Independent Product Teardown</span>
+        <span class="tag">RICE-Prioritized Fix</span>
+      </div>
+      <h3>Spotify Free-Tier Discovery Friction</h3>
+      <p class="summary">Why the skip-limit wall kills music discovery mid-session on Spotify's free tier. A root-cause teardown, three RICE-scored options where the highest-scoring one is the one I rejected, and a two-part fix that serves the user job and the business lever rather than trading one against the other.</p>
+      <p class="note">Independent analysis, not an official Spotify document. Every quantitative claim is either a stated case-study assumption or traced to a named source — see references at the end. <strong>This on-page version is the current one</strong>; the downloadable PDF predates a revision to the recommendation and RICE scoring.</p>
+      <div class="flagship-actions">
+        <button class="btn primary case-toggle" onclick="toggleCase('spotify-expand', this)" aria-expanded="false" aria-controls="spotify-expand">
+          <span class="toggle-label">View Full Case Study</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <a href="assets/spotify-teardown.pdf" target="_blank" rel="noopener noreferrer" class="btn ghost">Open PDF in New Tab</a>
+        <a href="assets/spotify-teardown.pdf" download class="btn ghost">Download PDF</a>
+      </div>
+
+      <div class="case-expand" id="spotify-expand">
+        <div class="case-expand-inner">
+          <span class="case-sub">Independent Product Teardown</span>
+
+          <div class="dblock" style="background:var(--accent-soft); border-radius:var(--radius-m); padding:18px; border:1px solid var(--line);">
+            <h5>How I approached it</h5>
+            <p>All three options are RICE-scored, not just the one I shipped — and the option that scored highest is the one I rejected. Raising the skip cap scores 8.1 and would work; it also removes the exact constraint that makes Premium feel necessary, a strategic cost the formula doesn't capture. I'd rather state that out loud than quietly score it down to produce the answer I wanted. The fix I did ship has two parts because one part alone would have failed its own primary metric: a better-targeted upgrade prompt converts some users, but almost everyone declines, and for all of them the dead end I logged as F4 would still be a dead end. Every quantitative claim here is traced to a stated assumption or a named source, including one apparent four-fold contradiction in my own baseline that I've reconciled rather than left sitting.</p>
+          </div>
+
+          <div class="dblock"><h5>The Job</h5><p>"When I'm bored with my usual rotation and don't know what I want to hear next, I want Spotify to surface something new that actually fits my mood, so I end the session having found at least one track worth keeping — without spending real effort searching for it myself."</p></div>
+
+          <div class="dblock"><h5>The User &amp; Context</h5><p><strong>Persona:</strong> a bored weeknight listener — mentally checked out of work, under 30 seconds of patience before disengaging, on the mobile Home tab, free ad-supported tier. <strong>Alternative if this fails:</strong> falls back to a familiar playlist (zero discovery), or opens a competing app instead.</p></div>
+
+          <div class="dblock"><h5>Journey Map — Discover Weekly</h5><p>8 steps mapped from app open to the skip-limit wall: orient → open Discover Weekly → play → skip tracks 1–5 (low friction, expected cost of exploring) → skip 6 triggers the wall (<strong>high friction, task-blocking</strong>) → generic limit modal with no path back into discovery (<strong>high friction, dead end</strong>) → track resumes with a mid-roll ad (medium friction). Six taps total to hit the wall — this number carries through to the before/after comparison.</p></div>
+
+          <div class="dblock"><h5>Friction Log — Four Frictions, Each Scored</h5>
+            <div class="impact-grid">
+              <div class="hd"></div><div class="hd">Severity</div><div class="hd">Frequency</div>
+              <div>F1 — Skip-limit wall stops exploration</div><div>4/5</div><div>High (~35% of sessions)</div>
+              <div>F2 — Mid-roll ad covers the player</div><div>3/5</div><div>Medium (~20–25%)</div>
+              <div>F3 — No visible reason for a recommendation</div><div>2/5</div><div>High (most sessions)</div>
+              <div>F4 — No recovery path when the wall appears</div><div>3/5</div><div>High (~35% — every session that hits F1)</div>
+            </div>
+            <p style="margin-top:10px; font-size:12.5px; color:var(--ink-faint);">F1 and F4 share the same ~35% frequency because F4 is by definition the state a user lands in the moment F1 fires. They differ in severity, not in how often they occur.</p>
+          </div>
+
+          <div class="dblock"><h5>Root Cause — A Deliberate Friction Ceiling, Not a Bug</h5><p>Skip limits and ad interruptions fund per-stream royalty costs and make Premium feel necessary — if free listening felt unlimited, there'd be little functional reason to upgrade. The cap is tolerable for casual playlist listening, but noticeably painful for exploratory listening.</p></div>
+
+          <div class="dblock"><h5>The Real Problem Statement</h5><p>"Users in this moment fail to complete music discovery because Spotify treats exploratory listening the same as playlist listening — which costs the company weaker recommendation signal quality." The user falls back to a familiar playlist or leaves; the business receives weaker exploratory signals, which can degrade recommendation quality over time.</p></div>
+
+          <div class="dblock"><h5>Three Options Considered</h5><ul>
+            <li><strong>A — Raise the skip cap (Rejected):</strong> removes the exact lever that makes Premium feel necessary, eroding the conversion funnel with no revenue offset.</li>
+            <li><strong>B — Earn extra skips (Rejected):</strong> bonus skips for rewarded ads or saves add engineering and trust complexity, are gameable, and only delay the wall.</li>
+            <li><strong>C — Discovery-Context Wall, two parts (Shipped):</strong> when the wall fires inside Discover Weekly, Radio, or Release Radar — <strong>(i)</strong> show a contextual trial prompt instead of the generic limit modal, and <strong>(ii)</strong> for everyone who declines, offer a one-tap route into a different Radio station or mix tuned to what they were skipping toward. No extra skips, so the cap is untouched, but the session continues inside discovery instead of ending at a dead end.</li>
+          </ul>
+          <p style="margin-top:12px; font-size:13px;"><strong style="color:var(--ink);">Why part (ii) exists:</strong> part (i) alone converts a slice of users to Premium, but almost everyone declines a trial prompt — and for all of them the dead end I logged as F4 is still a dead end, so Discovery Save Rate wouldn't move. Shipping only the paywall would have meant identifying the recovery-path problem myself and then not fixing it. The two parts together serve the user job and the business lever rather than trading one against the other.</p>
+          </div>
+
+          <div class="dblock"><h5>The RICE Math — All Three Scored, Not Just the Winner</h5>
+            <div class="impact-grid" style="grid-template-columns:1.6fr repeat(4, 0.7fr) 0.8fr;">
+              <div class="hd">Option</div><div class="hd">Reach</div><div class="hd">Impact</div><div class="hd">Conf.</div><div class="hd">Effort</div><div class="hd">RICE</div>
+              <div>A — Raise the skip cap</div><div>3</div><div>3</div><div>90%</div><div>1 pm</div><div>8.1</div>
+              <div>B — Earn extra skips</div><div>2</div><div>1</div><div>50%</div><div>4 pm</div><div>0.25</div>
+              <div><strong>C — Discovery-context wall + recovery</strong></div><div>3</div><div>2</div><div>80%</div><div>3 pm</div><div><strong>1.6</strong></div>
+            </div>
+            <p style="margin-top:12px; font-size:13px;"><strong style="color:var(--ink);">Why the highest score loses.</strong> Option A scores 8.1 and I still rejected it — because RICE measures effort, not strategic cost. Raising the cap directly removes the constraint that makes Premium feel necessary, and that cost doesn't appear anywhere in the formula. This is the case where the framework has to be overruled and the reason stated out loud, rather than quietly scored down to produce the answer I wanted. Option B is rejected on the arithmetic alone. Option C's effort rises from 2 to 3 person-months once the recovery path is included — a real cost I'd rather carry than ship a fix that doesn't move its own primary metric.</p>
+          </div>
+
+          <div class="dblock"><h5>Tradeoffs &amp; Pushback</h5><ul>
+            <li><strong>Growth / Platform Engineering:</strong> scope creep from tagging every discovery entry point → start with Discover Weekly and Radio only.</li>
+            <li><strong>Growth / Paywall Owner:</strong> a second paywall could create prompt fatigue → run a holdout A/B before rollout.</li>
+            <li><strong>Trust &amp; Design:</strong> the prompt could feel like penalizing curiosity → frame it around continuity, not restriction.</li>
+            <li><strong>Data Science:</strong> lift may reflect creative refresh rather than context → isolate the exact discovery-wall trigger.</li>
+          </ul></div>
+
+          <div class="dblock"><h5>Phased Investment — De-Risking the Bigger Bet</h5>
+            <div class="phase-row">
+              <div class="phase"><div class="ph-t">Phase One</div>Ship both halves on Discover Weekly and Radio only — contextual prompt plus recovery path — then run a 50/50 holdout A/B.</div>
+              <div class="phase"><div class="ph-t">Phase Two</div>Only if Discovery Save Rate moves without depressing ad revenue, extend surface tagging to Release Radar and the rest of discovery.</div>
+              <div class="phase"><div class="ph-t">If Phase One Is Flat</div>If save rate holds flat even with a working recovery path, that's evidence the skip cap itself — not the dead end — is the binding constraint, and the argument moves to Option A with data behind it.</div>
+            </div>
+          </div>
+
+          <div class="dblock"><h5>Success Metrics</h5>
+            <div class="metric-chip-row">
+              <span class="metric-chip">Primary — Discovery Save Rate: ~15% today (working estimate) → 20%+ target</span>
+              <span class="metric-chip">Secondary — Session continuation rate after the wall fires</span>
+              <span class="metric-chip">Guardrail — Ad Revenue per Free User: must not decline</span>
+              <span class="metric-chip">Counter — Premium Trial Starts: isolated via holdout</span>
+            </div>
+            <p style="margin-top:12px; font-size:13px;">The secondary metric exists specifically to measure part (ii). If trial starts rise but session continuation doesn't, I've built a better paywall and not a better product — and I'd want to see that split rather than read a single blended number.</p>
+          </div>
+
+          <div class="dblock"><h5>Before / After</h5><p><strong>Before:</strong> 6 taps to reach the skip wall, then a generic dead-end modal — the user must navigate separately to Premium, or abandon the session. <strong>After:</strong> the same 6 taps, then a modal offering two live routes — one tap to start a free trial, or one tap into a related Radio station. The session ends inside discovery either way.</p></div>
+
+          <div class="dblock" style="border-top:1px solid var(--line); padding-top:18px;">
+            <h5>References &amp; Data Notes</h5>
+            <p style="font-size:12.5px; color:var(--ink-faint); margin-bottom:10px;"><strong style="color:var(--ink-muted);">Official Spotify sources:</strong> Spotify Q1 2026 earnings (newsroom.spotify.com); Spotify Technology S.A. financials and shareholder reports; "Discover Weekly turns 10" (Spotify Newsroom, Jun 2025); Spotify discovery-playlist coverage (Spotify Newsroom, Jul 2026).</p>
+            <p style="font-size:12.5px; color:var(--ink-faint); margin-bottom:10px;"><strong style="color:var(--ink-muted);">Secondary sources — provenance caveat:</strong> Intellijend (2024), AMRA &amp; Elma (2025), Axis Intelligence (2026) and VaaSBlock (2026) are secondary aggregators, not primary research. I've used them for order-of-magnitude context only, never as the basis for a specific claim.</p>
+            <p style="font-size:12.5px; color:var(--ink-faint);"><strong style="color:var(--ink-muted);">On the 15% baseline — reconciling an apparent gap:</strong> Intellijend reports save rates of roughly 2–4%, which looks like it contradicts my 15% figure. It doesn't measure the same thing. Their figure is a catalogue-wide save rate across all listening; mine is a within-session save rate for users who have actively opened a discovery surface — a far smaller and much higher-intent denominator. I've kept 15% as a working assumption on that basis, but it is an assumption, and the first thing I'd replace with real instrumentation. The 20% target, friction frequencies, and session-volume estimates are working assumptions on the same footing, not Spotify-reported internal metrics.</p>
+          </div>
+
+          <div class="pdf-cta-row">
+            <a href="assets/spotify-teardown.pdf" target="_blank" rel="noopener noreferrer" class="btn ghost">Open PDF in New Tab</a>
+            <a href="assets/spotify-teardown.pdf" download class="btn primary">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Investment Guardian (3rd) -->
+    <article class="flagship reveal" id="case-ig">
+      <div class="tagrow">
+        <span class="tag accent">Product Owner Case Study</span>
+        <span class="tag">Revolut Concept — Independent</span>
+      </div>
+      <h3>Investment Guardian</h3>
+      <p class="summary">A Product Owner case study for Revolut focused on pre-trade protection for CFDs, crypto, and precious metals, designed on top of Revolut's existing AI stack.</p>
+      <p class="note">Independent concept case study, not a shipped Revolut product and not evidence of Revolut employment. Built to demonstrate product thinking against a real, publicly documented platform context.</p>
+      <div class="flagship-actions">
+        <button class="btn primary case-toggle" onclick="toggleCase('ig-expand', this)" aria-expanded="false" aria-controls="ig-expand">
+          <span class="toggle-label">View Full Case Study</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <a href="assets/investment-guardian.pdf" target="_blank" rel="noopener noreferrer" class="btn ghost">Open PDF in New Tab</a>
+        <a href="assets/investment-guardian.pdf" download class="btn ghost">Download PDF</a>
+      </div>
+
+      <div class="case-expand" id="ig-expand">
+        <div class="case-expand-inner">
+          <span class="case-sub">Product Owner Case Study — Independent Revolut Concept</span>
+
+          <div class="dblock"><h5>Role</h5><p>Product Owner (independent case study)</p></div>
+          <div class="dblock"><h5>Problem</h5><p>Protection mechanisms may exist around payments, but customers can still face risk when entering high-risk investment activity such as CFDs, crypto, or precious metals.</p></div>
+          <div class="dblock"><h5>Why It Matters</h5><p>The case study explores how a product could combine risk understanding, behavioural signals, targeted interventions, and compliance-ready reporting before a high-risk transaction proceeds.</p></div>
+          <div class="dblock" style="background:var(--accent-soft); border-radius:var(--radius-m); padding:18px; border:1px solid var(--line);">
+            <h5>Why Doesn't This Already Exist?</h5>
+            <p style="margin-bottom:10px;">Revolut runs nine FinCrime AI agents in production today. A gap this specific has real reasons behind it — so I argued them before proposing anything.</p>
+            <ul>
+              <li><strong>Friction sits on revenue.</strong> Every intervention here sits on a monetised trading flow; existing scam warnings sit on outbound payments that earn Revolut nothing — a materially easier internal case to make.</li>
+              <li><strong>Consent changes liability.</strong> A scammed customer is a victim. A customer who knowingly opened a leveraged position and lost is, legally and commercially, a different category.</li>
+              <li><strong>False accusations are a real risk.</strong> Wrongly calling a licensed broker a scam isn't a bad recommendation — it's a potentially defamatory claim about a regulated business.</li>
+              <li><strong>Part of this already exists.</strong> MiFID II's appropriateness test already covers some of this ground for complex instruments.</li>
+            </ul>
+            <p style="margin-top:10px;"><strong>Why build it anyway:</strong> the regulatory signals show the cost of inaction rising faster than the conversion cost of acting — and the 3–5% conversion cap keeps that trade-off honest.</p>
+          </div>
+          <div class="dblock"><h5>Regulatory Grounding — Where Guardian Goes Further</h5>
+            <p style="margin-bottom:10px;">CFDs are legally "complex instruments." MiFID II Article 25(3) already requires an appropriateness test before a retail customer can trade them. Guardian extends that baseline rather than duplicating it:</p>
+            <div class="impact-grid">
+              <div class="hd">Existing appropriateness test</div><div class="hd" style="grid-column:span 2;">Investment Guardian</div>
+              <div>Static — one assessment at onboarding</div><div style="grid-column:span 2;">Per-transaction — evaluates this specific deposit</div>
+              <div>Knowledge-based — asks what the customer knows</div><div style="grid-column:span 2;">Behavioural too — combines with PRAGMA signals</div>
+              <div>Scam-blind — tests leverage comprehension, not counterparty fraud</div><div style="grid-column:span 2;">Scam-aware — classifies the archetype, names the pattern</div>
+              <div>Generic warning — same disclosure for everyone</div><div style="grid-column:span 2;">Tiered response — disclosure → cooling-off → specialist escalation</div>
+            </div>
+          </div>
+          <div class="dblock"><h5>Guardrails — When the Model Is Wrong</h5>
+            <p>For a product whose output is an accusation, what happens when it's wrong is the central question, not a footnote. <strong>Precision target:</strong> ≥90% precision required before a named archetype is shown; below that, a generic unnamed caution only. <strong>Confidence tiering:</strong> high-confidence names the pattern, low-confidence gives a soft warning with no named accusation. <strong>Merchant review path:</strong> a flagged merchant can dispute the classification, routed to a FinCrime ops queue with a 2-business-day SLA before the label is reinstated or cleared. (Precision threshold and SLA are illustrative targets, to validate against real classifier performance.)</p>
+          </div>
+          <div class="dblock"><h5>Solution</h5><ul>
+            <li>Pre-trade risk-understanding checks</li>
+            <li>Scam-archetype classification</li>
+            <li>Tailored interventions scaled to risk</li>
+            <li>Compliance-ready reporting</li>
+          </ul></div>
+          <div class="dblock"><h5>Architecture</h5>
+            <p>Built around existing platform capabilities — PRAGMA, FinCrime AI Agents, AIR, decision engine, compliance audit log — rather than a new ML platform. Every path terminates in the same immutable compliance log.</p>
+            <div class="archflow-wrap">
+              <div class="archflow-scroll">
+              <svg class="archflow-svg" viewBox="0 0 760 312" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architecture flow: customer to pre-trade risk score to decision engine, branching to allow, warn, or block, all terminating in the compliance audit log">
+                <defs>
+                  <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--ink-faint)"/></marker>
+                </defs>
+                <!-- Customer -> Risk Score -->
+                <rect x="10" y="90" width="120" height="50" rx="10" fill="var(--surface-elevated)" stroke="var(--line-strong)"/>
+                <text x="70" y="120" text-anchor="middle" font-size="12.5" font-weight="700" fill="var(--ink)">Customer</text>
+                <line x1="130" y1="115" x2="175" y2="115" stroke="var(--ink-faint)" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                <!-- Risk Score -->
+                <rect x="180" y="90" width="140" height="50" rx="10" fill="var(--accent-soft)" stroke="var(--accent)"/>
+                <text x="250" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-ink)">Pre-Trade</text>
+                <text x="250" y="127" text-anchor="middle" font-size="11" fill="var(--accent-ink)">Risk Score (PRAGMA)</text>
+                <line x1="320" y1="115" x2="365" y2="115" stroke="var(--ink-faint)" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                <!-- Decision Engine -->
+                <rect x="370" y="90" width="140" height="50" rx="10" fill="var(--accent-soft)" stroke="var(--accent)"/>
+                <text x="440" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-ink)">Decision Engine</text>
+                <text x="440" y="127" text-anchor="middle" font-size="10.5" fill="var(--accent-ink)">score + archetype → tier</text>
+                <!-- branches to 3 outcomes -->
+                <line x1="510" y1="105" x2="565" y2="45" stroke="var(--ink-faint)" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                <line x1="510" y1="115" x2="565" y2="115" stroke="var(--ink-faint)" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                <line x1="510" y1="125" x2="565" y2="185" stroke="var(--ink-faint)" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                <rect x="570" y="20" width="170" height="42" rx="9" fill="var(--surface-elevated)" stroke="var(--line-strong)"/>
+                <text x="655" y="46" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Allow</text>
+                <rect x="570" y="94" width="170" height="42" rx="9" fill="var(--surface-elevated)" stroke="var(--line-strong)"/>
+                <text x="655" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Warn via AIR</text>
+                <rect x="570" y="168" width="170" height="42" rx="9" fill="var(--surface-elevated)" stroke="var(--line-strong)"/>
+                <text x="655" y="194" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">Block + Specialist</text>
+                <!-- all three outcomes converge into the compliance audit log -->
+                <line x1="655" y1="62" x2="655" y2="94" stroke="var(--ink-faint)" stroke-width="1" stroke-dasharray="3 3"/>
+                <line x1="655" y1="136" x2="655" y2="168" stroke="var(--ink-faint)" stroke-width="1" stroke-dasharray="3 3"/>
+                <line x1="655" y1="210" x2="655" y2="235" stroke="var(--ink-faint)" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <line x1="655" y1="235" x2="330" y2="235" stroke="var(--ink-faint)" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <line x1="330" y1="235" x2="330" y2="252" stroke="var(--ink-faint)" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrowhead)"/>
+                <rect x="215" y="255" width="230" height="44" rx="10" fill="var(--accent-soft)" stroke="var(--accent)"/>
+                <text x="330" y="274" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-ink)">Compliance Audit Log</text>
+                <text x="330" y="289" text-anchor="middle" font-size="10" fill="var(--accent-ink)">every path terminates here</text>
+              </svg>
+              </div>
+              <div class="diagram-swipe-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+                Swipe to see the full flow
+              </div>
+            </div>
+          </div>
+          <div class="dblock"><h5>Metrics — Illustrative Baselines, Not Confirmed Figures</h5>
+            <div class="metric-chip-row">
+              <span class="metric-chip">Investment Scam Loss Rate — illustrative baseline ~0.9% of first deposits</span>
+              <span class="metric-chip">Complaint &amp; Ombudsman Rate — baseline TBD, to source from Compliance</span>
+              <span class="metric-chip">Override Rate &amp; Trust Signal — fast read; segment NPS as a slower cross-check</span>
+            </div>
+            <p style="margin-top:12px; font-size:13px;"><strong style="color:var(--ink);">Guardrail, not a goal:</strong> first-time deposit conversion for legitimate (Low-tier) users must not fall more than 3–5% vs. control. This protects the business case — it doesn't need to improve. MVP scope is Capability 1 (Pre-Trade Score) only; Capabilities 2–4 are Phase-2 hypotheses.</p>
+          </div>
+          <div class="dblock"><h5>Execution — 90-Day Plan</h5>
+            <div class="phase-row">
+              <div class="phase"><div class="ph-t">Days 1–30</div>Discovery, stakeholder interviews, shadowing fraud/investment teams, confirm cohorts, define KPIs, map platform capabilities.</div>
+              <div class="phase"><div class="ph-t">Days 31–60</div>Scoped MVP in one market, selected high-risk flows, instrumentation, experiment design, intervention UX testing.</div>
+              <div class="phase"><div class="ph-t">Days 61–90</div>Analyze results, refine concept, modularize reusable elements, define scaling/governance roadmap.</div>
+            </div>
+          </div>
+          <div class="dblock"><h5>The Hardest Call In This Case Study</h5><p>Naming a specific merchant as a likely scam is an accusation, not a recommendation — so I set the precision bar before designing the intervention, not after, and built a dispute path for the merchants I get wrong. The version of this product that only protects customers would have been easier to design and worse to ship.</p></div>
+          <div class="dblock" style="border-top:1px solid var(--line); padding-top:18px;">
+            <h5>Sources for Named Systems</h5>
+            <p style="font-size:12.5px; color:var(--ink-faint);">PRAGMA — Revolut's published transaction foundation model (arXiv:2604.08649, "PRAGMA: Revolut Foundation Model"; also covered in Revolut/NVIDIA case study materials). FinCrime AI Agents — Revolut's no-code agent platform for financial-crime workflows, as described in a Revolut/Nebius customer case study. AIR — Revolut's in-app AI assistant, publicly launched April 2026 (Revolut newsroom: "Revolut enters new era of money intelligence with launch of AI assistant"). This case study builds on public descriptions of each system's stated purpose; it does not use or reference any non-public architecture detail.</p>
+          </div>
+
+          <div class="pdf-cta-row">
+            <a href="assets/investment-guardian.pdf" target="_blank" rel="noopener noreferrer" class="btn ghost">Open PDF in New Tab</a>
+            <a href="assets/investment-guardian.pdf" download class="btn primary">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- In progress: ONE card at a time. Per review — one reads as an active pipeline,
+         three reads as a wish list. Restore the others one at a time as each ships. -->
+    <div class="reveal" style="margin:44px 0 0;">
+      <h3 style="font-family:var(--font-body); font-size:14px; font-weight:700; color:var(--ink-muted); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:18px;">In Progress</h3>
+      <div class="coming-card-solo">
+        <div>
+          <span class="pulse-tag"><span class="pulse-dot"></span>Shipping Next</span>
+          <span class="kicker">Travel operations teardown · Air India, IGT Solutions</span>
+          <h4>Airline Rebooking Flow Teardown: 14 Months Inside the GDS</h4>
+        </div>
+        <p>What customers couldn't self-service inside an airline reservation system, and what I'd redesign — written from the failure side of the flow, not from the outside. The next case study to ship, built with the same method as the three above.</p>
+      </div>
+
+      <!-- QUEUED — restore one at a time, after the airline teardown ships:
+
+      <div class="coming-card">
+        <span class="pulse-tag"><span class="pulse-dot"></span>Coming Soon</span>
+        <span class="kicker">Competitive teardown · Experiences marketplaces</span>
+        <h4>Activities &amp; Experiences Discovery: Musement vs GetYourGuide vs Airbnb Experiences</h4>
+        <p>Comparing discovery flows, trust signals, and checkout friction across pure-play and diversified experience marketplaces, ending in prioritized product opportunities.</p>
+      </div>
+
+      <div class="coming-card">
+        <span class="pulse-tag"><span class="pulse-dot"></span>Coming Soon</span>
+        <span class="kicker">Manual QA &amp; release process · Next UK eCommerce</span>
+        <h4>From Ad-Hoc Testing to Release Readiness: A Manual Testing Playbook for UK Ecommerce</h4>
+        <p>A playbook for catching defects before releases ship, built from real testing work on Next's storefront at Capita.</p>
+      </div>
+
+      -->
+    </div>
+
+    <p class="reveal" style="max-width:70ch;margin-top:40px;font-size:13px;color:var(--ink-faint);">This is a living portfolio. More case studies will be added over time, each presented through a concise decision narrative.</p>
+  </div>
+</section>
+
+<!-- ============ TECHNICAL CURIOSITY ============ -->
+
+
+<!-- ============ RESUME ============ -->
+<section id="resume">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Resume &amp; Credentials</span>
+      <h2 class="fluid-h2">The full record.</h2>
+    </div>
+    <div class="resume-grid reveal">
+      <div>
+        <h4 style="font-family:var(--font-body);font-weight:700;font-size:15px;margin-bottom:12px;">Highlights</h4>
+        <div class="pill-list">
+          <span class="pill">Product Strategy</span><span class="pill">Roadmapping</span><span class="pill">Market &amp; Competitive Analysis</span>
+          <span class="pill">Requirements / PRDs / User Stories</span><span class="pill">KPI Tracking</span><span class="pill">A/B Testing</span>
+          <span class="pill">Stakeholder Management</span><span class="pill">Agile / Scrum</span><span class="pill">Platform Issue Analysis</span>
+          <span class="pill">Business Analysis</span><span class="pill">SQL / MySQL</span><span class="pill">Power BI</span>
+          <span class="pill">Google Analytics</span><span class="pill">Jira</span><span class="pill">Confluence</span><span class="pill">Figma</span>
+          <span class="pill">Miro</span><span class="pill">Aha!</span><span class="pill">ChatGPT</span><span class="pill">Claude</span><span class="pill">Perplexity</span>
+        </div>
+        <h4 style="font-family:var(--font-body);font-weight:700;font-size:15px;margin:28px 0 12px;">Certifications</h4>
+        <div class="cert-cards">
+          <div class="cert-card"><span>Aha! Certified Product Professional</span><span class="status done">Completed</span></div>
+          <div class="cert-card"><span>Leadership and Emotional Intelligence — ISB (Coursera)</span><span class="status done">Completed</span></div>
+        </div>
+        <div class="actions-row">
+          <a href="assets/resume.pdf" download class="btn primary">Download Resume</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn ghost">Open Resume PDF</a>
+        </div>
+        <p style="font-size:12.5px; color:var(--ink-faint); margin-top:20px;">Also on GitHub: a static HTML/CSS recreation of the YouTube interface, built for layout practice — not a product case study. <a href="https://github.com/Yash70707/Yash-Projects" target="_blank" rel="noopener noreferrer" style="color:var(--accent); text-decoration:underline;">View it here</a>.</p>
+      </div>
+      <a class="resume-preview" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Yash Todkari's full resume PDF in a new tab">
+        <img src="assets/resume-preview.jpg" alt="First page of Yash Todkari's resume">
+        <span class="resume-preview-cta">Open full resume PDF ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2 class="fluid-h2">Let's talk about product.</h2>
+      <p>Interested in discussing product opportunities or research-led discovery? I'd welcome a conversation.</p>
+    </div>
+    <div class="contact-wrap reveal">
+      <div class="contact-links">
+        <a href="mailto:yashtodkariitaly@gmail.com" class="btn primary">yashtodkariitaly@gmail.com</a>
+        <a href="https://www.linkedin.com/in/yash-todkari07/" target="_blank" rel="noopener noreferrer" class="btn ghost">LinkedIn</a>
+        <a href="https://github.com/Yash70707" target="_blank" rel="noopener noreferrer" class="btn ghost">GitHub</a>
+      </div>
+      <div style="margin-top:26px; padding-top:22px; border-top:1px solid var(--line); font-size:13.5px; color:var(--ink-muted); max-width:60ch;">
+        <p style="margin-bottom:6px;"><strong style="color:var(--ink);">Based in</strong> Milan, Italy — open to remote work and relocation worldwide.</p>
+        <p><strong style="color:var(--ink);">Work authorization:</strong> Indian citizen on an active EU Job Search Permit — eligible to work in Italy and Poland without sponsorship, available to start immediately. Sponsorship required for roles elsewhere in the EU.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <div>
+      <strong style="font-family:var(--font-display);">Yash Todkari</strong>
+      <span class="fine" style="display:block;margin-top:2px;">Product Manager · Product Owner</span>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#about">About</a><a href="#featured-work">Featured Work</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+    </nav>
+    <span class="fine">© 2026 Yash Todkari</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  var toggle = document.getElementById('themeToggle');
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var current = prefersDark ? 'dark' : 'light';
+  root.setAttribute('data-theme', current);
+  toggle.addEventListener('click', function(){
+    current = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', current);
+    document.getElementById('themeIcon').style.transform = 'rotate(180deg)';
+    setTimeout(function(){ document.getElementById('themeIcon').style.transform = 'rotate(0deg)'; }, 500);
+  });
+
+  // nav scroll state
+  var nav = document.getElementById('siteNav');
+  window.addEventListener('scroll', function(){
+    nav.classList.toggle('scrolled', window.scrollY > 12);
+  }, { passive:true });
+
+  // mobile sheet
+  var hamburger = document.getElementById('hamburger');
+  var sheet = document.getElementById('mobileSheet');
+  hamburger.addEventListener('click', function(){
+    var open = sheet.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  sheet.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ sheet.classList.remove('open'); hamburger.classList.remove('open'); });
+  });
+
+  // hero load animation
+  requestAnimationFrame(function(){ document.querySelector('.hero').classList.add('loaded'); });
+
+  // decision trail progress + nodes
+  var sectionIds = ['top','about','travel-commerce','capabilities','research','featured-work','resume','contact'];
+  var trailLine = document.querySelector('.trail-line');
+  var nodes = [];
+  sectionIds.forEach(function(id, i){
+    var n = document.createElement('div');
+    n.className = 'trail-node';
+    n.style.top = (i / (sectionIds.length - 1) * 100) + '%';
+    n.dataset.target = id;
+    trailLine.appendChild(n);
+    nodes.push(n);
+  });
+  var fill = document.getElementById('trailFill');
+
+  function onScroll(){
+    var doc = document.documentElement;
+    var scrolled = doc.scrollTop;
+    var height = doc.scrollHeight - doc.clientHeight;
+    var pct = height > 0 ? (scrolled / height) * 100 : 0;
+    fill.style.height = pct + '%';
+
+    var active = sectionIds[0];
+    sectionIds.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el){
+        var rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight * 0.5){ active = id; }
+      }
+    });
+    nodes.forEach(function(n){ n.classList.toggle('active', n.dataset.target === active); });
+
+    document.querySelectorAll('nav.links a').forEach(function(a){
+      var href = a.getAttribute('href').replace('#','');
+      a.classList.toggle('active', href === active);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  // cursor glow (desktop pointer only)
+  if (window.matchMedia('(pointer:fine)').matches){
+    document.body.classList.add('has-cursor');
+    var glow = document.getElementById('cursorGlow');
+    window.addEventListener('pointermove', function(e){
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+    // magnetic buttons
+    document.querySelectorAll('.magnetic').forEach(function(el){
+      el.addEventListener('pointermove', function(e){
+        var r = el.getBoundingClientRect();
+        var x = e.clientX - r.left - r.width/2;
+        var y = e.clientY - r.top - r.height/2;
+        el.style.transform = 'translate(' + (x*0.18) + 'px,' + (y*0.28) + 'px)';
+      });
+      el.addEventListener('pointerleave', function(){ el.style.transform = 'translate(0,0)'; });
+    });
+  }
+
+  // scroll reveals
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduceMotion && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.12, rootMargin:'0px 0px -6% 0px' });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  // Numbers are static in the HTML (no count-up animation) — bars/stairs still
+  // animate their fill on scroll-into-view as a visual flourish only.
+  var statObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (!entry.isIntersecting) return;
+      var wrap = entry.target;
+      wrap.querySelectorAll('.bar-fill').forEach(function(b){ b.style.width = b.dataset.pct + '%'; });
+      wrap.querySelectorAll('.stair .fill').forEach(function(f){ f.style.height = f.dataset.fillpct + '%'; });
+      wrap.querySelectorAll('.stage-fill').forEach(function(f){ f.style.width = f.dataset.rowpct + '%'; });
+      statObserver.unobserve(wrap);
+    });
+  }, { threshold:0.25 });
+  document.querySelectorAll('.thesis-wrap').forEach(function(w){ statObserver.observe(w); });
+
+  // Inline case-study expand/collapse (replaces old modal-dialog pattern)
+  window.toggleCase = function(id, btn){
+    var el = document.getElementById(id);
+    if (!el) return;
+    var isOpen = el.classList.contains('open');
+    if (isOpen){
+      el.style.maxHeight = el.scrollHeight + 'px';
+      requestAnimationFrame(function(){ el.style.maxHeight = '0px'; });
+      el.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.querySelector('.toggle-label').textContent = 'View Full Case Study';
+    } else {
+      el.classList.add('open');
+      el.style.maxHeight = el.scrollHeight + 'px';
+      btn.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+      btn.querySelector('.toggle-label').textContent = 'Collapse Case Study';
+      setTimeout(function(){ if (el.classList.contains('open')) el.style.maxHeight = 'none'; }, 520);
+      setTimeout(function(){
+        var article = btn.closest('.flagship');
+        if (article) article.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      }, 60);
+    }
+  };
+})();
+</script>
+</body>
+</html>
